@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+
+from flask import Flask, url_for, render_template
+
+app = Flask(__name__)
+
+app.debug = True
+app.secret_key = '&7dl-gxw_q=wksvia$d4rrs!e_@9hyf*oy41#j*ed8%wzgap6q'
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/singeries')
+def singe():
+    return render_template('singeries.html')
+
+@app.route('/singeries/alidodo')
+def alidodo():
+    return render_template('alidodo.html')
+
+@app.route('/trombinoscope')
+def trombi():
+    return render_template('trombi.html')
+
+@app.route('/trombinoscope/<int:uid>')
+def show():
+    return render_template('show.html')
+
+@app.route('/condingstyle')
+def code():
+    return render_template('code.html')
+
+@app.route('/condingstyle/roi')
+def king():
+    return render_template('king.html')
+
+@app.route('/condingstyle/héro')
+def hero():
+    return render_template('hero.html')
+
+@app.route('/condingstyle/hymne')
+def song():
+    return render_template('song.html')
+
+@app.route('/condingstyle/symbole')
+def symbol():
+    return render_template('symbol.html')
+
+@app.route('/condingstyle/jeu')
+def game():
+    return render_template('game.html')
+
+if __name__ == '__main__':
+    app.run()
