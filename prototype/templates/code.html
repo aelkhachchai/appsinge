@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}- CondingStyle{% endblock %}
+{% block content %}
+<section>
+  <h1>CondingStyle APPSINGE</h1>
+  <p>Il y avait <a href="https://www.marxists.org/francais/marx/works/1847/00/kmfe18470000a.htm">Le manifeste du parti communiste</a>, il y a <a href="http://agilemanifesto.org/">Manifesto for Agile Software Development</a> et il y aura la <a href={{ url_for('code') }}>CodingStyle APPSINGE</a></p>
+  <h2>Notre Dieu</h2>
+  <img src={{ url_for('static', filename='king.jpg') }} alt="Our King" />
+  <a href={{ url_for('king') }}>Priez</a> pour le salut de votre âme ...
+  <h2>Notre Héro</h2>
+  <img src={{ url_for('static', filename='hero.jpg') }} alt="Our Hero" />
+  <a href={{ url_for('hero') }}>Chantez</a> les louanges de votre sauveur !
+  <h2>Notre Hymne</h2>
+  <img src={{ url_for('static', filename='song.jpg') }} alt="Our Song" height="200" width="200"/>
+  Tous en <a href={{ url_for('song') }}>Choeur</a>
+  <h2>Notre Symbole</h2>
+  <img src={{ url_for('static', filename='symbol.jpg') }} alt="Our Symbol" height="200" width="200"/>
+  Dans la nuit noire, de lui émane <a href={{ url_for('symbol') }}>l'espoir</a> ...
+  <h2>Notre Jeu</h2>
+  <img src={{ url_for('static', filename='game.jpg') }} alt="Our Game" height="200" width="200"/>
+  On fait une petite <a href={{ url_for('game') }}>partie</a> ?
+{% endblock %}

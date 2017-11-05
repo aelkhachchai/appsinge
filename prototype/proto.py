@@ -17,15 +17,29 @@ def singe():
 
 @app.route('/singeries/alidodo')
 def alidodo():
-    return render_template('alidodo.html')
+    alidodo = [f'{i}ali.jpg' for i in range(1, 13)]
+    return render_template('alidodo.html', alidodo=alidodo)
 
 @app.route('/trombinoscope')
 def trombi():
-    return render_template('trombi.html')
+    appsinges = [
+        {'uid': 0, 'log': 'achraf.el-khachchai', 'img': 'goteki.jpg'},
+        {'uid': 1, 'log': 'nathan.quintard', 'img': 'oignon.jpg'}
+    ]
+    return render_template('trombi.html', appsinges=appsinges)
 
 @app.route('/trombinoscope/<int:uid>')
-def show():
-    return render_template('show.html')
+def show(uid: int):
+    appsinge = {
+        'login': 'achraf.el-khachchai',
+        'pseudo': 'Goteki',
+        'firstname': 'Achraf',
+        'lastname': 'El Khachchai',
+        'email': 'el.achraf150@gmail.com',
+        'img': 'goteki.jpg',
+        'birthdate': '29/10/1995'
+    }
+    return render_template('show.html', user=appsinge)
 
 @app.route('/condingstyle')
 def code():

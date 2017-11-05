@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}- Alidodo{% endblock %}
+{% block content %}
+<section>
+  <h1>Alidodo</h1>
+  {% for ali in alidodo %}
+  <img src={{ url_for('static', filename=ali) }} height="300" width="300" alt="Yet Another Dodo Ali" />
+  {% endfor %}
+{% endblock %}

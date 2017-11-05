@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} - Trombinoscope{% endblock %}
+{% block content %}
+<section>
+  <h1>Bestiaire APPSINGE</h1>
+  {% for singe in appsinges %}
+  <div>
+    <img src={{ url_for('static', filename=singe['img'])  }} height="100" width="100" alt={{ singe['log'] }} />
+    <a href={{ url_for('show', uid=singe['uid']) }}>
+      {{ singe['log'] }}
+    </a>
+  </div>
+  {% endfor %}
+</section>
+{% endblock %}

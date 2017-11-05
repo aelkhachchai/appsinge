@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}- Héro{% endblock %}
+{% block content %}
+<section>
+  <h1>Le Sauveur</h1>
+  <img src={{ url_for('static', filename='hero.jpg') }} alt="Héo des APPSINGEs" />
+  <p>Il incarne le héro dont nous avons besoin mais nous ne mériterons jamais l'homme qu'il est.</p>
+  <h2>Ode à Pedro</h2>
+  <p>Un cavalier, qui surgit hors de la nuit</br>
+  Court vers l'aventrue au galop</br>
+  So nom, il le signe de la pointe de son épee</br>
+  D'un P qui veut dire Pedro</p>
+</section>
+{% endblock %}

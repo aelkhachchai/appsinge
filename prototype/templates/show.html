@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}- {{ user['firstname'] }} {{ user['lastname'] }}{% endblock %}
+{% block content %}
+<section>
+  <h1>{{ user['pseudo'] }}</h1>
+  <img src={{ url_for('static', filename=user['img']) }} height="300" width="300"alt="profile picture" />
+  <ul>
+    <li>login: {{ user['login'] }}</li>
+    <li>prénom: {{ user['firstname'] }}</li>
+    <li>nom: {{ user['lastname'] }}</li>
+    <li>email: {{ user['email'] }}</li>
+    <li>birthdate: {{ user['birthdate'] }}</li>
+  </ul>
+</section>
+{% endblock %}
