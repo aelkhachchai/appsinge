@@ -5,3 +5,24 @@
 [ ] elm Front-end; end-to-end tests
 
 [ ] MEP
+
+[ ] Talk w/ Colosse + pedago about a bigger intra
+  comment :
+    - most of apprentissage ressources are split between multiple sources
+    - alot of info is passed through facebook but not every body check it nor
+      use it at all
+    - some info are provided by mail by class delegate but not every body read
+      thoses
+    - provide a centralize intra for apprentissage students
+    - teach students to use it as a reference, a place where they can ask
+      questions
+    - pedago interface w/ links publication, agenda and so on
+      - ex links : pegasus, multiple epita links like epimap to regroup
+    - prof inteface w/ git or file depo. Could provide a stronger place to check
+      wich student deliver at wich date etc. Groups creation.
+    - BDD for users, agenda, achievements etc
+    - server cri?
+    - internal messagery from @epita.fr mails (import outlook?) / forum like
+      place?
+    - early developpement : provide a whitelist from BDD except for things like
+      agenda
